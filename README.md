@@ -73,8 +73,6 @@ All dependencies are listed in the `requirements/` folder.
 
 ## Running ProxyLM Regressor
 
-▶️ **Demo video:** [Watch here](https://youtu.be/rXutsaE3eSE)
-
 ### 1. Distance Calculation
 
 Run the following script to calculate URIEL+ distances:
