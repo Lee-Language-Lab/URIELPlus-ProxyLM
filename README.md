@@ -169,7 +169,7 @@ This updates the experiment CSV files for MT560 and NUSA with URIEL+ distances.
 
 ---
 
-> 📄 **Note:** After each experiment finishes, results are automatically saved to a `.csv` file.
+> 📄 **Note:** After each experiment finishes, results are automatically saved to a `.csv` file. Extract the test RMSE and test SE from the CSV (you may need to average them across individual languages). Lower values indicate better performance, as RMSE measures error.
 
 
 ### 4. Determining Statistical Significance (Optional)
