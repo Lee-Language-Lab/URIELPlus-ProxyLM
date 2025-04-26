@@ -11,6 +11,7 @@ By [Mason Shipton](https://github.com/Masonshipton25)
   - [1. Distance Calculation](#1-distance-calculation)
   - [2. Updating Experiment CSVs](#2-updating-experiment-csvs)
   - [3. Running Experiments](#3-running-experiments)
+  - [4. Determining Statistical Significance](#4-determining-statistical-significance)
 
 ## About ProxyLM
 
@@ -133,6 +134,12 @@ This updates the experiment CSV files for MT560 and NUSA with URIEL+ distances.
   python -m src.proxy_regressor.main -em seen_unseen -r xgb -rj src/proxy_regressor/regressor_configs/xgb_config_mt560_m2m100.json -d mt560 -m m2m100
   ```
 
+  After running the **Seen/Unseen (M2M100)** command, run:
+  ```bash
+  python unseen.py
+  ```
+  This will output a text file with more readable results and will output the average standard error. NOTE: For **Seen/Unseen (M2M100)** experiments, take the average of `test_source_rmse` and `test_target_rmse` for the `test_rmse`.
+
 </details>
 
 ---
@@ -165,3 +172,27 @@ This updates the experiment CSV files for MT560 and NUSA with URIEL+ distances.
 ---
 
 > 📄 **Note:** After each experiment finishes, results are automatically saved to a `.csv` file.
+
+
+### 4. Determining Statistical Significance (Optional)
+
+You can test statistical significance between URIEL, URIEL+, or different URIEL versions.
+
+**Steps:**
+
+1. Open `test.py` and update the parameters at **line 19** to point to the correct experiment.
+
+2. Run:
+   ```bash
+   python test.py
+   ```
+   > This will save the `Y_test` results from the experiment to a text file.
+
+3. `Y_pred` results from the experiment are saved in a file named `{dataset_name}_{model_name}_Y_pred_results.txt`.  
+   Copy both the `Y_test` and `Y_pred` values into `statistical.py` under the correct experiment section.
+
+4. Run:
+   ```bash
+   python statistical.py
+   ```
+   > This will output the **p-value** measuring the statistical significance between the different URIEL results.
