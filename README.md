@@ -10,8 +10,12 @@ By [Mason Shipton](https://github.com/Masonshipton25), [York Hay Ng](https://git
 - [Running ProxyLM Regressor](#running-proxylm-regressor)
   - [1. Distance Calculation](#1-distance-calculation)
   - [2. Updating Experiment CSVs](#2-updating-experiment-csvs)
-  - [3. Running Experiments](#3-running-experiments)
-  - [4. Determining Statistical Significance](#4-determining-statistical-significance)
+  - [3. Changing Language Features](#3-changing-language-features)
+  - [4. Running Experiments](#4-running-experiments)
+  
+  Optional
+
+  - [5. Determining Statistical Significance](#5-determining-statistical-significance)
 
 ## About ProxyLM
 
@@ -101,8 +105,11 @@ This updates the experiment CSV files for MT560 and NUSA with URIEL+ distances.
 
 ---
 
+### 3. Changing Language Features
 
-### 3. Running Experiments
+If you add or remove language features (e.g., introducing a new feature type), open `src\proxy_regressor\utils.py` and update the `LANG_FEATURES` list to include or exclude the appropriate language features.
+
+### 4. Running Experiments
 
 <details>
 <summary><strong>MT560 Experiments</strong> (click to expand)</summary>
@@ -171,8 +178,9 @@ This updates the experiment CSV files for MT560 and NUSA with URIEL+ distances.
 
 > 📄 **Note:** After each experiment finishes, results are automatically saved to a `.csv` file. Extract the test RMSE and test SE from the CSV (you may need to average them across individual languages). Lower values indicate better performance, as RMSE measures error.
 
+### Optional
 
-### 4. Determining Statistical Significance (Optional)
+### 5. Determining Statistical Significance
 
 You can test statistical significance between URIEL, URIEL+, or different URIEL versions.
 
