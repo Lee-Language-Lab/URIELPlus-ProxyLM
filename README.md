@@ -103,6 +103,8 @@ This updates the experiment CSV files for MT560 and NUSA with URIEL+ distances.
 
 > Updated experiment CSVs will be saved to `src/proxy_regressor/csv_datasets/`.
 
+> 📄 **Note:** To add a new distance type, follow the same format used for morphological distance in `distances/replace_distances.py`.
+
 ---
 
 ### 3. Changing Language Features
