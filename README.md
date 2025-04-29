@@ -19,23 +19,37 @@ By [Mason Shipton](https://github.com/Masonshipton25), [David Anugraha](https://
 
 ## About ProxyLM
 
-### [ProxyLM: Predicting Language Model Performance on Multilingual Tasks via Proxy Models](https://arxiv.org/abs/2406.09334)
+### [ProxyLM: Predicting Language Model Performance on Multilingual Tasks via Proxy Models](https://aclanthology.org/2025.findings-naacl.106/)
 
 ![framework for LM performance prediction](./logos/proxylm_logo.png)
 
 #### Abstract
 Performance prediction is a method to estimate the performance of Language Models (LMs) on various Natural Language Processing (NLP) tasks, mitigating computational costs associated with model capacity and data for fine-tuning. Our paper introduces ProxyLM, a scalable framework for predicting LM performance using proxy models in multilingual tasks. These proxy models act as surrogates, approximating the performance of the LM of interest. By leveraging proxy models, ProxyLM significantly reduces computational overhead on task evaluations, achieving up to a 37.08x speedup compared to traditional methods, even with our smallest proxy models. Additionally, our methodology showcases adaptability to previously unseen languages in pre-trained LMs, outperforming the state-of-the-art performance by 1.89x as measured by root-mean-square error (RMSE). This framework streamlines model selection, enabling efficient deployment and iterative LM enhancements without extensive computational resources.
 
-If you are interested for more information, check out the [full paper](https://arxiv.org/abs/2406.09334).
+If you are interested for more information, check out the [full paper](https://aclanthology.org/2025.findings-naacl.106/).
 
 <u>If you use this code for your research, please cite the following work:</u>
 
 ```bibtex
-@article{anugraha2024proxylm,
-  title={ProxyLM: Predicting Language Model Performance on Multilingual Tasks via Proxy Models},
-  author={Anugraha, David and Winata, Genta Indra and Li, Chenyue and Irawan, Patrick Amadeus and Lee, En-Shiun Annie},
-  journal={arXiv preprint arXiv:2406.09334},
-  year={2024}
+@inproceedings{anugraha-etal-2025-proxylm,
+    title = "{P}roxy{LM}: Predicting Language Model Performance on Multilingual Tasks via Proxy Models",
+    author = "Anugraha, David  and
+      Winata, Genta Indra  and
+      Li, Chenyue  and
+      Irawan, Patrick Amadeus  and
+      Lee, En-Shiun Annie",
+    editor = "Chiruzzo, Luis  and
+      Ritter, Alan  and
+      Wang, Lu",
+    booktitle = "Findings of the Association for Computational Linguistics: NAACL 2025",
+    month = apr,
+    year = "2025",
+    address = "Albuquerque, New Mexico",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.findings-naacl.106/",
+    pages = "1981--2011",
+    ISBN = "979-8-89176-195-7",
+    abstract = "Performance prediction is a method to estimate the performance of Language Models (LMs) on various Natural Language Processing (NLP) tasks, mitigating computational costs associated with model capacity and data for fine-tuning. Our paper presents ProxyLM, a scalable task- and language-agnostic framework designed to predict the performance of LMs using proxy models. These proxy models act as surrogates, approximating the performance of the LM of interest. By leveraging these proxy models, ProxyLM significantly reduces computational overhead in task evaluations, achieving up to a 37.08x speedup over traditional methods, even with our smallest proxy models. Our results across multiple multilingual NLP tasks and various robustness tests demonstrate that ProxyLM not only adapts well to previously unseen languages in pre-trained LMs, but also generalizes effectively across different datasets, outperforming the state-of-the-art by at least 1.78x in terms of root-mean-square error (RMSE)."
 }
 ```
 
@@ -44,7 +58,7 @@ If you have any questions, you can open a [GitHub Issue](https://github.com/davi
 
 ## About URIEL+
 
-### [URIEL+: Enhancing Linguistic Inclusion and Usability in a Typological and Multilingual Knowledge Base](https://arxiv.org/abs/2409.18472)
+### [URIEL+: Enhancing Linguistic Inclusion and Usability in a Typological and Multilingual Knowledge Base](https://aclanthology.org/2025.coling-main.463/)
 
 ![knowledge base for natural language processing](./logos/urielplus_logo.png)
 
@@ -56,11 +70,30 @@ If you are interested for more information, check out the [full paper](https://a
 <u>If you use this code for your research, please cite the following work:</u>
 
 ```bibtex
-@article{khan2024urielplus,
-  title={URIEL+: Enhancing Linguistic Inclusion and Usability in a Typological and Multilingual Knowledge Base},
-  author={Khan, Aditya and Shipton, Mason and Anugraha, David and Duan, Kaiyao and Hoang, Phuong H. and Khiu, Eric and Doğruöz, A. Seza and Lee, En-Shiun Annie},
-  journal={arXiv preprint arXiv:2409.18472},
-  year={2024}
+@inproceedings{khan-etal-2025-uriel,
+    title = "{URIEL}+: Enhancing Linguistic Inclusion and Usability in a Typological and Multilingual Knowledge Base",
+    author = {Khan, Aditya  and
+      Shipton, Mason  and
+      Anugraha, David  and
+      Duan, Kaiyao  and
+      Hoang, Phuong H.  and
+      Khiu, Eric  and
+      Do{\u{g}}ru{\"o}z, A. Seza  and
+      Lee, En-Shiun Annie},
+    editor = "Rambow, Owen  and
+      Wanner, Leo  and
+      Apidianaki, Marianna  and
+      Al-Khalifa, Hend  and
+      Eugenio, Barbara Di  and
+      Schockaert, Steven",
+    booktitle = "Proceedings of the 31st International Conference on Computational Linguistics",
+    month = jan,
+    year = "2025",
+    address = "Abu Dhabi, UAE",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.coling-main.463/",
+    pages = "6937--6952",
+    abstract = "URIEL is a knowledge base offering geographical, phylogenetic, and typological vector representations for 7970 languages. It includes distance measures between these vectors for 4005 languages, which are accessible via the lang2vec tool. Despite being frequently cited, URIEL is limited in terms of linguistic inclusion and overall usability. To tackle these challenges, we introduce URIEL+, an enhanced version of URIEL and lang2vec that addresses these limitations. In addition to expanding typological feature coverage for 2898 languages, URIEL+ improves the user experience with robust, customizable distance calculations to better suit the needs of users. These upgrades also offer competitive performance on downstream tasks and provide distances that better align with linguistic distance studies."
 }
 ```
 
