@@ -1,6 +1,6 @@
 # Using ProxyLM Regressor with URIEL+
 
-By [Mason Shipton](https://github.com/Masonshipton25), [York Hay Ng](https://github.com/Swithord)
+By [Mason Shipton](https://github.com/Masonshipton25), [David Anugraha](https://github.com/davidanugraha), [York Hay Ng](https://github.com/Swithord)
 
 ## Contents
 
